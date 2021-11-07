@@ -9,6 +9,14 @@ public class Card : ScriptableObject
     public string Description;
     public Sprite ClassArt;
     public Sprite TypeArt;
+    public Type CardType;
 
+    public enum Type
+    {
+        Str,
+        Dex,
+        Faith,
+        Int
+    }
 
 }
