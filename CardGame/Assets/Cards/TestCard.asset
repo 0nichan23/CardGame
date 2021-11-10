@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17c089ecd57071c48b74bb7b1ffb1c8d, type: 3}
   m_Name: TestCard
   m_EditorClassIdentifier: 
-  Name: 
-  Description: 
-  ClassArt: {fileID: 0}
-  TypeArt: {fileID: 0}
+  Name: testu
+  Description: this is a test card
+  ClassArt: {fileID: 21300000, guid: f095c0afd0b7ddb4a9f0ef0664977535, type: 3}
+  TypeArt: {fileID: 21300000, guid: fe6b8d6ce4a135349a557227741dfc28, type: 3}
+  CardType: 0

@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 1409454741679914157}
   - component: {fileID: 1409454741679914156}
   m_Layer: 5
-  m_Name: Card
+  m_Name: BlankCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e520e1895779754c881c71411a6d563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RefCard: {fileID: 0}
+  RefCard: {fileID: 11400000, guid: 8bba5f6009e1215408e13f28341bc75c, type: 2}
   Name: {fileID: 1409454741950386515}
   Description: {fileID: 1409454741304054825}
   ClassArt: {fileID: 1409454742855419034}

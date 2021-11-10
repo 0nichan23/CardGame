@@ -10,7 +10,6 @@ public class Card : ScriptableObject
     public Sprite ClassArt;
     public Sprite TypeArt;
     public Type CardType;
-
     public enum Type
     {
         Str,
@@ -18,5 +17,8 @@ public class Card : ScriptableObject
         Faith,
         Int
     }
-
+    public void Play()
+    {
+        Debug.Log(Description);
+    }
 }

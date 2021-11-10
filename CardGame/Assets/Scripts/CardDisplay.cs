@@ -8,7 +8,6 @@ public class CardDisplay : MonoBehaviour
     public Card RefCard;
     public Text Name;
     public Text Description;
-
     public Image ClassArt;
     public Image TypeArt;
     void Start()
@@ -18,5 +17,4 @@ public class CardDisplay : MonoBehaviour
         ClassArt.sprite = RefCard.ClassArt;
         TypeArt.sprite = RefCard.TypeArt;
     }
-
 }
