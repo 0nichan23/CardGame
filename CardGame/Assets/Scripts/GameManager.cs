@@ -14,30 +14,21 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playcard();
-    }
-
-    void playcard()
-    {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            
-            if (x <= 4)
-            {
-                CombatManager.Instance.PlayCard(HandSystem.Instance.PlayerHand[x]);
-                x++;
-            }
-            else
-            {
-                Debug.Log("u aint got any moe carsds");
-            }
-
-                
-           
-
+            playcard();
         }
-       
+    }
 
-
+    public void playcard()
+    {
+        if (HandSystem.Instance.PlayerHand[0])
+        {
+            CombatManager.Instance.PlayCard(HandSystem.Instance.PlayerHand[0]);
+        }
+        else
+        {
+            Debug.LogError("u aint got anymoe cards");
+        }
     }
 }

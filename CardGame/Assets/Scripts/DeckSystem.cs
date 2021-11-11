@@ -33,6 +33,6 @@ public class DeckSystem : MonoBehaviour
     }
 
     //draw functions should work in the combat manager
-    // only 1 instance, created one combat intiates 
+    // only 1 instance, created when combat intiates 
      
 }

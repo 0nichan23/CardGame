@@ -29,6 +29,8 @@ public class CombatManager : MonoBehaviour
     public void PlayCard(CardDisplay SelectedCard)
     {
         //add the selected card to the discard pile
+        DiscardPileSystem.Instance.DiscardPile.Add(SelectedCard);
+        //play the card and activate its effect, events are added to the cooresponging ones.
         SelectedCard.RefCard.Play();
         HandSystem.Instance.PlayerHand.Remove(SelectedCard);
     }
