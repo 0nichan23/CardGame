@@ -22,7 +22,8 @@ public class Card : ScriptableObject
         Str,
         Dex,
         Faith,
-        Int
+        Int,
+        Normal
     }
     public void Play()
     {

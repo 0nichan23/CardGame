@@ -245,11 +245,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e520e1895779754c881c71411a6d563, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RefCard: {fileID: 11400000, guid: 8bba5f6009e1215408e13f28341bc75c, type: 2}
+  RefCard: {fileID: 11400000, guid: dd321889a97c90c49bb3cbb9a3f32a34, type: 2}
   Name: {fileID: 1409454741950386515}
   Description: {fileID: 1409454741304054825}
   ClassArt: {fileID: 1409454742855419034}
   TypeArt: {fileID: 1409454741095795371}
+  Back: {fileID: 0}
 --- !u!1 &1409454741950386513
 GameObject:
   m_ObjectHideFlags: 0

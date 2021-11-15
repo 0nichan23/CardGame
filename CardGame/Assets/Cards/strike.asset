@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c089ecd57071c48b74bb7b1ffb1c8d, type: 3}
+  m_Name: strike
+  m_EditorClassIdentifier: 
+  Name: strike
+  Description: deal 5 dmg
+  TypeArt: {fileID: 21300000, guid: fe6b8d6ce4a135349a557227741dfc28, type: 3}
+  CardType: 4
+  StrArt: {fileID: 21300000, guid: 4906b9df26b7dde40bf38d0cd818886d, type: 3}
+  DexArt: {fileID: 21300000, guid: f095c0afd0b7ddb4a9f0ef0664977535, type: 3}
+  FaithArt: {fileID: 21300000, guid: 865797bfb70fc7241b6d36c284518560, type: 3}
+  IntArt: {fileID: 21300000, guid: 2558e47c84856f948962b103dde97a1a, type: 3}
+  BlankArt: {fileID: 21300000, guid: a172838d2ce4e0142b0ed9657caebbda, type: 3}

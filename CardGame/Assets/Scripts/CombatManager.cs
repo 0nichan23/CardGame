@@ -6,6 +6,7 @@ public class CombatManager : MonoBehaviour
 {
     public static CombatManager Instance { get; private set; }
     //the value the deck holds, can be anything i want it to be 
+    public GameObject hand;
     private void Awake()
     {
         if (Instance == null)
@@ -24,6 +25,7 @@ public class CombatManager : MonoBehaviour
         CardDisplay pulledCard = DeckSystem.Instance.PlayerGameDeck.Peek();
         Debug.Log(pulledCard.Name.text + " added to the players hand"); 
         HandSystem.Instance.PlayerHand.Add(DeckSystem.Instance.PlayerGameDeck.Pop());
+        Instantiate(HandSystem.Instance.PlayerHand[0], hand.transform);
     }
 
     public void PlayCard(CardDisplay SelectedCard)
@@ -62,6 +64,12 @@ public class CombatManager : MonoBehaviour
         }
     }
 
+    public void ShuffleDeck()
+    {
+
+    }
     //events - on turn end, on turn beginning, on play card - tba
 
 }
+
+        

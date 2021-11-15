@@ -20,7 +20,6 @@ public class DeckSystem : MonoBehaviour
             Instance = this;
             for (int i = 0; i < 30; i++)
             {
-                //Debug.Log("added card to the deck");
                 PlayerWholeDeck.Push(card);
             }
             DontDestroyOnLoad(gameObject);
