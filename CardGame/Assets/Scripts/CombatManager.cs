@@ -35,6 +35,7 @@ public class CombatManager : MonoBehaviour
         //play the card and activate its effect, events are added to the cooresponging ones.
         SelectedCard.RefCard.Play();
         HandSystem.Instance.PlayerHand.Remove(SelectedCard);
+        Destroy(SelectedCard.gameObject);
     }
 
     public void StartCombat()

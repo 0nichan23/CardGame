@@ -5,9 +5,12 @@ using UnityEngine.EventSystems;
 
 public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    public Transform parenttoreturnto = null;
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("started draggin");
+        parenttoreturnto = this.transform.parent;
+        this.transform.SetParent(this.transform.parent.parent);
+        GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -17,8 +20,9 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("stopped draggin");
-
+        //Debug.Log("stopped draggin");
+        this.transform.SetParent(parenttoreturnto);
+        GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 
 
