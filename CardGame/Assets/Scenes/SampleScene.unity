@@ -817,7 +817,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: babe3758179314d4a8a2279d2602e3dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SelectedHero: {fileID: 0}
 --- !u!4 &1077829529
 Transform:
   m_ObjectHideFlags: 0
@@ -1319,6 +1318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d063cc4f381e414489ba6a9247927e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerClass: 
 --- !u!1 &1698927787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1351,6 +1351,10 @@ MonoBehaviour:
   card: {fileID: 6507082304506418059, guid: be5baba1931dc2f4cb86bf20fa45a229, type: 3}
   cards:
   - {fileID: 6507082304506418059, guid: be5baba1931dc2f4cb86bf20fa45a229, type: 3}
+  - {fileID: 6507082304506418059, guid: 17a46d25d733ae34c88e3218835e8288, type: 3}
+  - {fileID: 6507082304506418059, guid: c9c4d4640e72fac45b04b22aa4949953, type: 3}
+  - {fileID: 6507082304506418059, guid: 414cc9be9a5b1aa46bbcf5cfca20ce0a, type: 3}
+  - {fileID: 6507082304506418059, guid: 7a7b6e07347c26549ada5b79b3277aaa, type: 3}
 --- !u!4 &1698927789
 Transform:
   m_ObjectHideFlags: 0

@@ -24,10 +24,10 @@ public class CombatManager : MonoBehaviour
 
     public void DrawCard() //gets called every time the player draws a card from his deck to his hand
     {
-        CardDisplay pulledCard = DeckSystem.Instance.PlayerGameDeck.Peek();
+        CardDisplay pulledCard = DeckSystem.Instance.PlayerGameDeck.Pop();
         Debug.Log(pulledCard.Name.text + " added to the players hand"); 
-        HandSystem.Instance.PlayerHand.Add(DeckSystem.Instance.PlayerGameDeck.Pop());
-        Instantiate(HandSystem.Instance.PlayerHand[counter++], hand.transform);
+        GameObject Go = Instantiate(pulledCard.gameObject, hand.transform);
+        HandSystem.Instance.PlayerHand.Add(Go.GetComponent<CardDisplay>());
     }
 
     public void PlayCard(CardDisplay SelectedCard)

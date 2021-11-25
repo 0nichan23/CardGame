@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Fighter : Hero
 {
-    Fighter()
+    private void Start()
     {
-        PlayerClass = type.STR;
+        PlayerClass.Add(Stat.STR);
         Name = "Fighter";
     }
 

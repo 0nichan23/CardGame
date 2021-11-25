@@ -11,6 +11,7 @@ public class CardDisplay : MonoBehaviour
     public Image ClassArt;
     public Image TypeArt;
     public Image Back;
+    public Stat CardStat;
 
     private void Update()
     {
@@ -28,23 +29,7 @@ public class CardDisplay : MonoBehaviour
         Name.text = RefCard.Name;
         Description.text = RefCard.Description;
         TypeArt.sprite = RefCard.TypeArt;
-        switch (RefCard.CardType)
-        {
-            case Card.Type.Str:
-                ClassArt.sprite = RefCard.StrArt;
-                break;
-            case Card.Type.Dex:
-                ClassArt.sprite = RefCard.DexArt;
-                break;
-            case Card.Type.Faith:
-                ClassArt.sprite = RefCard.FaithArt;
-                break;
-            case Card.Type.Int:
-                ClassArt.sprite = RefCard.IntArt;
-                break;
-            default:
-                ClassArt.sprite = RefCard.BlankArt;
-                break;
-        }
+        ClassArt.sprite = RefCard.Art;
+        CardStat = RefCard.CardType;
     }
 }

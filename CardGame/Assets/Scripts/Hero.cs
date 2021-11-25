@@ -1,19 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+public enum Stat
+{
+    STR,
+    DEX,
+    INT,
+    FTH,
+    NRML
+}
 public class Hero : MonoBehaviour
 {
     //equipment 
     //levelups
     protected string Name;
 
-    protected type PlayerClass;
-    public enum type
-    {
-        STR,
-        DEX,
-        INT,
-        FTH
-    }
+    public List<Stat> PlayerClass = new List<Stat>();
 }
+
+   
+        
+
+

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 [CreateAssetMenu(fileName = "New Card")]
 public class Card : ScriptableObject
 {
@@ -11,20 +10,10 @@ public class Card : ScriptableObject
     public string Description;
     //public Sprite ClassArt;
     public Sprite TypeArt;
-    public Type CardType;
-    public Sprite StrArt;
-    public Sprite DexArt;
-    public Sprite FaithArt;
-    public Sprite IntArt;
-    public Sprite BlankArt;
-    public enum Type
-    {
-        Str,
-        Dex,
-        Faith,
-        Int,
-        Normal
-    }
+    public Stat CardType;
+    public Sprite Art;
+
+    
     public void Play()
     {
         Debug.Log(Description);

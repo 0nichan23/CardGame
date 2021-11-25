@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     Hero[] Party;
-    public Hero SelectedHero;
+    public static Hero SelectedHero;
     void Start()
     {
         CombatManager.Instance.StartCombat();
@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
                 if (hit.collider.gameObject.tag == "Hero")
                 {
                     SelectedHero = hit.collider.gameObject.GetComponent<Hero>();
+                    HandSystem.Instance.FilterCards();
                 }
             }
         }
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SelectedHero = null;
+            HandSystem.Instance.FilterCards();
         }
 
 

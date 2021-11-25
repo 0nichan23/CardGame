@@ -24,7 +24,7 @@ public class DeckSystem : MonoBehaviour
             Instance = this;
             for (int i = 0; i < 30; i++)
             {
-                PlayerWholeDeck.Push(cards[Random.Range(0, cards.Length-1)]);
+                PlayerWholeDeck.Push(cards[Random.Range(0, cards.Length)]);
             }
             DontDestroyOnLoad(gameObject);
         }
