@@ -9,14 +9,15 @@ public enum Stat
     FTH,
     NRML
 }
+
 public class Hero : MonoBehaviour
 {
-    //equipment 
-    //levelups
     protected string Name;
-
     public List<Stat> PlayerClass = new List<Stat>();
+    public List<CardDisplay> PlayerIndividualDeck;
 }
+
+
 
    
         
