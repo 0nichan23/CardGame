@@ -14,7 +14,7 @@ public class Hero : MonoBehaviour
 {
     protected string Name;
     public List<Stat> PlayerClass = new List<Stat>();
-    public List<CardDisplay> PlayerIndividualDeck;
+    public List<CardDisplay> PlayerIndividualDeck = new List<CardDisplay>(10);
 }
 
 

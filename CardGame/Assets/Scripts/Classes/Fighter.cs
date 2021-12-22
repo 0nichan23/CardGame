@@ -7,7 +7,6 @@ public class Fighter : Hero
     {
         PlayerClass.Add(Stat.STR);
         Name = "Fighter";
-        PlayerIndividualDeck = new List<CardDisplay>(10);
         for (int i = 0; i < PlayerClass.Count; i++)
         {
             for (int j = 0; j < PlayerIndividualDeck.Count; j++)

@@ -9,7 +9,6 @@ public class Rogue : Hero
         PlayerClass.Add(Stat.DEX);
         Name = "Rogue";
         DeckSystem.Instance.Addhero(this);
-        PlayerIndividualDeck = new List<CardDisplay>(10);
     }
 
     //speical ability

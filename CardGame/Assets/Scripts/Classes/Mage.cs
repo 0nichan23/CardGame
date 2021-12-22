@@ -9,7 +9,6 @@ public class Mage : Hero
         PlayerClass.Add(Stat.INT);
         Name = "Mage";
         DeckSystem.Instance.Addhero(this);
-        PlayerIndividualDeck = new List<CardDisplay>(10);
 
     }
 

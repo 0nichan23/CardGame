@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-
+using System.Linq;
+using System.Collections;
 
 public class DeckSystem : MonoBehaviour
 {
@@ -8,30 +9,17 @@ public class DeckSystem : MonoBehaviour
     public static DeckSystem Instance { get; private set; }
     //public CardDisplay[] cards = new CardDisplay[5];
     public Stack<CardDisplay> PlayerGameDeck;
-    public Stack<CardDisplay> PlayerWholeDeck;
-    public List<Hero> IndividualDecks;
+    public Stack<CardDisplay> PlayerWholeDeck = new Stack<CardDisplay>(30);
+    public List<Hero> IndividualDecks= new List<Hero>(3);
 
 
     //value can be anything i want to be
 
     private void Awake()
-    {
-
-        PlayerWholeDeck = new Stack<CardDisplay>(30);
-        IndividualDecks = new List<Hero>(3);
+    {   
         if (Instance == null)
         {
             Instance = this;
-            for (int i = 0; i < 30; i++)
-            {
-                for (int j = 0; j < 10; j++)
-                {
-                    Debug.Log("added card");
-                    Hero selectedIndex = IndividualDecks[0];
-                    PlayerWholeDeck.Push(selectedIndex.PlayerIndividualDeck[j]);
-
-                }
-            }
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -40,6 +28,24 @@ public class DeckSystem : MonoBehaviour
         }
         PlayerGameDeck = PlayerWholeDeck;
     }
+    private void Start()
+    {
+        setUpDeckf();
+    }
+
+    void setUpDeckf()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 10; j++)
+            {
+                Debug.Log("added card");
+                Hero selectedIndex = IndividualDecks[i];
+                PlayerWholeDeck.Push(selectedIndex.PlayerIndividualDeck[j]);
+            }
+        }
+        //shuffle();
+    }
 
     public void Addhero(Hero hero)
     {
@@ -47,6 +53,8 @@ public class DeckSystem : MonoBehaviour
         IndividualDecks.Add(hero);
     }
 
+
+   
     //draw functions should work in the combat manager
     // only 1 instance, created when combat intiates 
 

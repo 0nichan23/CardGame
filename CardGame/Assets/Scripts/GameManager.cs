@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static Hero SelectedHero;
     void Start()
     {
-        CombatManager.Instance.StartCombat();
+        StartCoroutine("StartGame");
         SelectedHero = null;
     }
     private void Update()
@@ -36,4 +36,12 @@ public class GameManager : MonoBehaviour
 
     }
 
+
+
+    IEnumerator StartGame()
+    {
+        yield return new WaitForSeconds(1);
+        CombatManager.Instance.StartCombat();
+
+    }
 }
