@@ -17,7 +17,6 @@ public class Droppable : MonoBehaviour, IDropHandler
         if (card != null)
         {
             CombatManager.Instance.PlayCard(card);
-        }
-        
+        }        
     }
 }

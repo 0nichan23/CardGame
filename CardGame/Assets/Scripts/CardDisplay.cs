@@ -15,14 +15,14 @@ public class CardDisplay : MonoBehaviour
 
     private void Update()
     {
-        if (DeckSystem.Instance.PlayerGameDeck.Contains(this))
+        /*if (DeckSystem.Instance.PlayerGameDeck.Contains(this))
         {
             Back.gameObject.SetActive(true);
         }
         else
         {
             Back.gameObject.SetActive(false);
-        }
+        }*/
     }
     void Start()
     {

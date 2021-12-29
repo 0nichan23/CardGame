@@ -12,9 +12,6 @@ public class DeckSystem : MonoBehaviour
     public Stack<CardDisplay> PlayerWholeDeck = new Stack<CardDisplay>(30);
     public List<Hero> IndividualDecks= new List<Hero>(3);
 
-
-    //value can be anything i want to be
-
     private void Awake()
     {   
         if (Instance == null)
